@@ -30,14 +30,14 @@ function resetStage() {
     `;
 }
 
-// 3. Yes Button Logic
+// 3. Yes Button Logic (Updated Message)
 function celebrate() {
-    question.innerHTML = "I only built a whole website as a 'joke'... <br>but I'm glad you're down to be my Valentine.❤️";
-
+    question.innerHTML = "my hbs and I only built a whole website as a 'joke'... <br>but still, I'm glad you're down to be my Valentine. 😉❤️";
+    
     actionArea.style.display = "none";
     socialArea.style.display = "block";
 
-    for (let i = 0; i < 50; i++) {
+    for(let i=0; i<50; i++) {
         setTimeout(createHeart, i * 50);
     }
 }
