@@ -1,6 +1,6 @@
 :root {
     --primary: #ff4d6d;
-    --discord: #5865F2;
+    --whatsapp: #25D366;
     --bg-gradient: linear-gradient(-45deg, #fff0f3, #ffccd5, #ffb3c1, #fff0f3);
 }
 
@@ -18,21 +18,13 @@ body {
 }
 
 @keyframes gradientBG {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(15px);
     padding: 3.5rem;
     border-radius: 30px;
@@ -46,23 +38,16 @@ body {
 }
 
 @keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     color: var(--primary);
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 2rem;
-    transition: all 0.5s ease;
+    line-height: 1.4;
 }
 
 .btn-group {
@@ -81,39 +66,22 @@ button {
     transition: all 0.3s ease;
 }
 
-#yes-btn {
-    background: var(--primary);
-    color: white;
-}
+#yes-btn { background: var(--primary); color: white; }
+#no-btn { background: white; color: var(--primary); border: 2px solid var(--primary); }
 
-#no-btn {
-    background: white;
-    color: var(--primary);
-    border: 2px solid var(--primary);
-}
-
-.reset-btn {
-    background: #666;
-    color: white;
-}
+.reset-btn { background: #666; color: white; margin-top: 10px; }
 
 .social-btn {
-    background: var(--discord);
+    background: var(--whatsapp);
     color: white;
     width: 100%;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
     animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
 
 .heart-particle {
@@ -125,7 +93,5 @@ button {
 }
 
 @keyframes fall {
-    to {
-        transform: translateY(110vh) rotate(360deg);
-    }
+    to { transform: translateY(110vh) rotate(360deg); }
 }
