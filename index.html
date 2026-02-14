@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Special Message ❤️</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Stylish Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="stylesheet">
 </head>
 
 <body>
     <div class="card">
         <h1 id="question">Will you be my Valentine? ❤️</h1>
+
         <div id="action-area" class="btn-group">
             <button id="yes-btn" onclick="celebrate()">Yes!</button>
             <button id="no-btn" onclick="askAgain()">No</button>
         </div>
+
+        <!-- Hidden until she says Yes -->
+        <div id="social-area" style="display: none; margin-top: 20px;">
+            <a id="confirm-link" href="https://discord.com" target="_blank">
+                <button class="social-btn">Slide into my DMs 💌</button>
+            </a>
+        </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 
